@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive CV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left_side">
+            <div class="profileText">
+                <div class="imgBx">
+                    <img src="images/shivam.jpg" alt="shivam" id ="image" onmouseover="glowImage()" onmouseleave="glowOffImage()">
+                </div>
+                <h2 id="name" onmouseover="glowName()" onmouseleave="glowOffName()">Shivam Mishra<br><span>Web Developer</span></h2>
+            </div>
+            <div class="contactInfo" id="contact" onmouseover="glowContact()" onmouseleave="glowOffContact()">
+                <h3 class="title">Contact Info</h3>
+                <ul>
+                    <li>
+                        <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                        <span class="text">+918887568763</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-envelope-open" aria-hidden="true"></i></span>
+                        <span class="text">mishra4839653@gmail.com</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-globe" aria-hidden="true"></i></span>
+                        <span class="text">www.mywebsite.com</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+                        <span class="text">www.linkedin.com/me</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <span class="text">Jaunpur, Uttar Pradesh, India</span>
+                    </li>
+                </ul>
+            </div>
+
+
+
+
+
+            <div class="contactInfo education" id="education" onmouseover="glowEducation()" onmouseleave="glowOffEducation()">
+                <h3 class="title">Education</h3>
+                <ul>
+                    <li>
+                        <h5>2017-2021</h5>
+                        <h4>Bachelor Degree in Electrical Engineering</h4>
+                        <h4>Rajkiya Engineering College Sonbhadra</h4>
+                    </li> 
+                    
+                    <li>
+                        <h5>2013-2015</h5>
+                        <h4>Intermediate</h4>
+                        <h4>Sarvodaya Inter College Khudauli</h4>
+                    </li> 
+                    
+                </ul>
+            </div>
+
+            <div class="contactInfo language">
+                <h3 class="title" id="langu" onmouseover="glowLanguage()" onmouseleave="glowOffLanguage()">Languages</h3>
+                <ul>
+                    <li>
+                      <span class="text" onmouseover="engProg()" onmouseleave="engProgHide()" id="gloweng">English</span>
+                      <span class="percent">
+                           <div style="width: 80%; display: none;" id="englishProgress"></div>
+                      </span>
+                    </li>
+                    <li>
+                        <span class="text" onmouseover="hinProg()" onmouseleave="hinProgHide()" id="glowhin">Hindi</span>
+                        <span class="percent">
+                             <div style="width: 90%; display: none;" id="hindiProgress"></div>
+                        </span>
+                      </li>
+                </ul>
+            </div>    
+        </div>
+        <div class="right_side" id="rightSide" onmouseover="changeBackCol()" onmouseleave="normBackCol()">
+            <div class="about" id="profil" onmouseover="glowProfile()" onmouseleave="glowOffProfile()">
+                <h2 class="title2">Profile</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod reiciendis, ex libero soluta vero iste cupiditate voluptatum quam alias. Velit, fugiat repellat. Deleniti molestiae rem nesciunt veniam asperiores modi iure.</p>
+            </div>
+
+            <div class="about" id="experience" onmouseover="glowExperience()" onmouseleave="glowOffExperience()">
+                <h2 class="title2">Experience</h2>
+                <div class="box">
+                    <div class="year_company">
+                        <h5>Freshar</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about skills" id="professionalSkills" onmouseover="glowProfession()"  onmouseleave="glowOffProfession()">
+                <h2 class="title2">Professional Skills</h2>
+                <div class="box">
+                    <h4>HTML</h4>
+                    <div class="percent">
+                        <div style="width: 95%; display:none;" id="indexPercent"></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h4>CSS</h4>
+                    <div class="percent">
+                        <div style="width: 80%; display: none;" id="stylePercent"></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h4>Javascript</h4>
+                    <div class="percent">
+                        <div style="width: 80%; display: none;" id="scriptPercent"></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h4>Photoshop</h4>
+                    <div class="percent">
+                        <div style="width: 20%; display: none;" id="photoPercent"></div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="about interest" id="intrest" onmouseover="glowInterest()" onmouseleave="glowOffInterest()">
+                <h2 class="title2">Interest</h2>
+                <ul>
+                    <li><i class="fa fa-gamepad" aria-hidden="true"></i> Gaming</li>
+                    <li><i class="fa fa-book" aria-hidden="true"></i> Reading</li>
+                    <li><i class="fa fa-train" aria-hidden="true"></i> Travelling</li>
+
+                </ul>
+            </div>
+                
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
